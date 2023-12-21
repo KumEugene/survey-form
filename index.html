@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+    
+        <label for="name-label" id="name-label">Name
+        <input id="name" type="text" name="name" required placeholder="Enter your Name"/></label>
+        <label for="email-label" id="email-label">Email<input id="email" type="email" name="email" required placeholder="Enter Your Email"/></label>
+        <label for="age-label" id="number-label">Age(Optional)<input id="number" type="number" name="age" min="13" max="120" placeholder="Age"/></label>
+        <label for="dropdown">Which option best describes your current role?
+          <select id="dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you recomment freeCodeCamp to a friend?</legend>
+        <label for="recommendation"><input type="radio" class="inline" id="recommendation" name="Definitely" checked  value="definitely"/>Definitely
+        <label for="recommendation"><input type="radio" class="inline" id="recommendation" name="Definitely" checked  value="definitely"/>Ofcourse
+         </label>
+        <label for="recommendation"><input type="radio" class="inline" id="recommendation" name="Maybe" value="maybe" />Maybe
+        <label for="recommendation"><input type="radio" class="inline" id="recommendation" name="Maybe" value="maybe" />Maybe Not
+         </label> </label>
+        <label for="recommendation"><input type="radio" class="inline" id="recommendation" name="Not-sure"  value="not-sure"/>Not sure 
+        <label for="recommendation"><input type="radio" class="inline" id="recommendation" name="Not-sure"  value="not-sure"/>No
+        </label>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="favorite-feature">What is your favorite feature on freeCodeCamp?
+          <select id="favorite-feature">
+            <option>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+          </select>
+          </label>
+      </fieldset>
+      <fieldset class="improvement">
+      <label for="improvement">What would you like to see improved? (Check all that apply)<input id="improvement"type="checkbox" value="submit" />Front-end Projects</label>
+        <input id="improvement"type="checkbox" value="submit" />Back-end Projects
+        <input id="improvement"type="checkbox" value="submit" />Data Visualisation
+        <input id="improvement"type="checkbox" value="submit" />Challenges
+        <input id="improvement"type="checkbox" value="submit" />Open Source Community
+        <input id="improvement"type="checkbox" value="submit" />Gitter help rooms
+        <input id="improvement"type="checkbox" value="submit" />Videos
+        <input id="improvement"type="checkbox" value="submit" />City Meetups
+        <input id="improvement"type="checkbox" value="submit" />Wiki
+        <input id="improvement"type="checkbox" value="submit" />Forum
+        <input id="improvement"type="checkbox" value="submit" />Additional Courses
+      </label>
+    </fieldset>
+      <label>Any comments or suggestions?<textarea rows="5" cols="40" placeholder="Enter your comment here" class="input-textarea"></textarea>
+      <input type="submit" value="Submit" class="submit" id="submit"/>
+    </form>
+  </body>
+</html>
